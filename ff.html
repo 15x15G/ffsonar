@@ -1,0 +1,39 @@
+<html>
+<header>
+    <title>狒狒广播</title>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+</header>
+
+<body>
+    <div>
+        <!-- <p>
+            <a href="ff.html?json=Hunt-S">狒狒广播S</a>
+            <a href="ff.html?json=Hunt-SS">狒狒广播SS</a>
+            <a href="ff.html?json=Hunt-A">狒狒广播A</a>
+            <a href="ff.html?json=Hunt-B">狒狒广播B</a>
+            <a href="ff.html?json=Fate" >狒狒广播Fate</a>
+        </p> -->
+        <p>
+            <button onclick="changesearch('json','Hunt-S')">狒狒广播S</button>
+            <button onclick="changesearch('json','Hunt-SS')">狒狒广播SS</button>
+            <button onclick="changesearch('json','Hunt-A')">狒狒广播A</button>
+            <button onclick="changesearch('json','Hunt-B')">狒狒广播B</button>
+            1分钟更新一次！需要刷新网页！ <button id="update" onclick="update()" disabled="false">刷新</button>
+        </p>
+        <p>
+            <button onclick="changesearch('center','')">全部（含国际服）</button>
+            <button onclick="changesearch('center','陆行鸟')">陆行鸟</button>
+            <button onclick="changesearch('center','莫古力')">莫古力</button>
+            <button onclick="changesearch('center','猫小胖')">猫小胖</button>
+            <button onclick="changesearch('center','豆豆柴')">豆豆柴</button>
+        </p>
+    </div>
+    <div style="position: fixed; top: 0; right: 0;z-index: 99; font-size: 20;" id="datenow"></div>
+    <div id="wrapper" style="width:100%"></div>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="ff.js"></script>
+</body>
+
+</html>
